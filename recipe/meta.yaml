@@ -1,4 +1,4 @@
-{% set version = "1.3.3" %}
+{% set version = "1.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/qgam_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/qgam/qgam_{{ version }}.tar.gz
-  sha256: 9a68fe4e74f4188862f7c01d682d50ffadd96ce7b98383404472309c87e3a26f
+  sha256: 7633120a48a85ab73f7e1bc8b02c98319285c2abd05f9d13d25339d7aaaacacb
 
 build:
   merge_build_host: true  # [win]
